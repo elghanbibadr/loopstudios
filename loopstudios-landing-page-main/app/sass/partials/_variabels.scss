@@ -1,0 +1,14 @@
+$dark-gray: hsl(0, 0%, 55%);
+$vary-darkGray: hsl(0, 0%, 41%);
+$mobile: 23.4375em;
+$desktop-large: 90em;
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @include content;
+  }
+}
+@mixin largeDesktop {
+  @media (min-width: $desktop-large) {
+    @include content;
+  }
+}
