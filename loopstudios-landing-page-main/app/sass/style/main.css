@@ -1,3 +1,51 @@
-@forward "../partials/typography";
-@forward "../partials/variabels";
+body {
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-family: "Alata", sans-serif;
+  color: #8c8c8c;
+  text-transform: none;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  color: #8c8c8c;
+}
+
+body {
+  background-color: dimgray;
+}
+
+@media (min-width: 40em) {
+  body {
+    background-color: black;
+  }
+}
+
+@media (min-width: 40em) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+  }
+  .grid--col2 {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .grid--col4 {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 /*# sourceMappingURL=main.css.map */

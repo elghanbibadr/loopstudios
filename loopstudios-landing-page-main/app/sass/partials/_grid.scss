@@ -1,0 +1,11 @@
+@include tablette {
+  .grid {
+    display: grid;
+  }
+  .grid--col2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid--col4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
