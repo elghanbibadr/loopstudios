@@ -1,7 +1,7 @@
 $dark-gray: hsl(0, 0%, 55%);
 $vary-darkGray: hsl(0, 0%, 41%);
 $mobile: 40em;
-$desktop-large: 90em;
+$desktop-large: 80em;
 @mixin tablette {
   @media (min-width: $mobile) {
     @content;
@@ -15,4 +15,7 @@ $desktop-large: 90em;
 @mixin flex($justify-content) {
   display: flex;
   justify-content: $justify-content;
+}
+@mixin centerText {
+  text-align: center;
 }

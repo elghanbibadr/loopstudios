@@ -1,13 +1,44 @@
+html {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
 body {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
   font-family: "Josefin Sans", sans-serif;
 }
 
 p {
+  font-weight: bold;
   font-family: "Alata", sans-serif;
-  color: #8c8c8c;
   text-transform: none;
+}
+
+a {
+  text-transform: none;
+}
+
+button {
+  font-size: 1.3rem;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: bold;
 }
 
 *,
@@ -19,19 +50,17 @@ p {
   margin: 0;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
-  color: #8c8c8c;
-}
-
-body {
-  background-color: dimgray;
-}
-
-@media (min-width: 40em) {
-  body {
-    background-color: black;
-  }
 }
 
 @media (min-width: 40em) {
@@ -47,5 +76,91 @@ body {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  background-color: white;
+  border: 1px solid #000;
+  color: black;
+}
+
+header {
+  height: 100vh;
+  padding: 2.7rem 2rem;
+  background: url(/loopstudios-landing-page-main/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 40em) {
+  header {
+    background: url(/loopstudios-landing-page-main/images/desktop/image-hero.jpg);
+  }
+}
+
+@media (min-width: 80em) {
+  header {
+    padding: 4rem 5rem;
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 40em) {
+  .nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.nav__close {
+  display: none;
+}
+
+.nav__humburger {
+  margin-top: 1rem;
+}
+
+.nav-container {
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+
+@media (min-width: 40em) {
+  .nav-container {
+    display: none;
+  }
+}
+
+.nav__list {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 40em) {
+  .nav__list {
+    margin-top: 0.4rem;
+    max-height: 100vh;
+    width: auto;
+  }
+  .nav__list li {
+    display: inline;
+    margin-left: 1rem;
+  }
+}
+
+.nav__list a {
+  color: white;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,10 +1,39 @@
+// !
+html {
+  font-size: 100%;
+}
+h1,
+h2,
+h3 {
+  letter-spacing: 2px;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
 body {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
   font-family: "Josefin Sans", sans-serif;
 }
 p {
+  font-weight: bold;
   font-family: "Alata", sans-serif;
-  color: $dark-gray;
   text-transform: none;
+}
+a {
+  text-transform: none;
+}
+
+button {
+  font-size: 1.3rem;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  // caractere spacing should be added
 }
