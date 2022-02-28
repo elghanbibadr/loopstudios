@@ -1,14 +1,20 @@
 $dark-gray: hsl(0, 0%, 55%);
 $vary-darkGray: hsl(0, 0%, 41%);
 $mobile: 40em;
-$desktop-large: 80em;
+$desktoplarge: 66em;
+$desktop: 56em;
 @mixin tablette {
   @media (min-width: $mobile) {
     @content;
   }
 }
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
 @mixin largeDesktop {
-  @media (min-width: $desktop-large) {
+  @media (min-width: $desktoplarge) {
     @content;
   }
 }

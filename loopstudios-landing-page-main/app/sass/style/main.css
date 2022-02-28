@@ -98,7 +98,7 @@ header {
   }
 }
 
-@media (min-width: 80em) {
+@media (min-width: 66em) {
   header {
     padding: 4rem 5rem;
   }
@@ -173,5 +173,93 @@ header {
 
 .collapse.nav__list {
   display: block;
+}
+
+.interactive {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.interactive__img {
+  height: 400px;
+  zoom: 66%;
+  margin-inline: 10px;
+  background-image: url(/loopstudios-landing-page-main/images/mobile/image-interactive.jpg);
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 40em) {
+  .interactive__img {
+    background: url(/loopstudios-landing-page-main/images/desktop/image-interactive.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+    zoom: 50%;
+    position: relative;
+    left: 2rem;
+    z-index: -111;
+  }
+}
+
+@media (min-width: 56em) {
+  .interactive__img {
+    zoom: 60%;
+  }
+}
+
+@media (min-width: 66em) {
+  .interactive__img {
+    zoom: 80%;
+  }
+}
+
+.interactive h1 {
+  line-height: 1;
+  margin-block: 3rem 1.5rem;
+}
+
+.interactive p {
+  color: #8c8c8c;
+}
+
+.interactive p,
+.interactive h1 {
+  margin-inline: 2rem;
+}
+
+.interactive__content {
+  background-color: white;
+  margin-top: 4rem;
+}
+
+@media (min-width: 40em) {
+  .interactive__content {
+    text-align: left;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    position: relative;
+    left: -20%;
+  }
+}
+
+@media (min-width: 56em) {
+  .interactive__content {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    left: -10%;
+  }
+}
+
+@media (min-width: 66em) {
+  .interactive__content {
+    left: -20%;
+    top: 20%;
+  }
+}
+
+@media (min-width: 66em) {
+  .interactive {
+    margin-inline: 3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
