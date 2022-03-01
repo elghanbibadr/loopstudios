@@ -4,7 +4,8 @@ header {
   background: url(/loopstudios-landing-page-main/images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   @include tablette {
-    background: url(/loopstudios-landing-page-main/images/desktop/image-hero.jpg);
+    background: url(/loopstudios-landing-page-main/images/desktop/image-hero.jpg)
+      no-repeat;
   }
   @include largeDesktop {
     padding: 4rem 5rem;
@@ -37,6 +38,7 @@ header {
       margin-top: 0.4rem;
       max-height: 100vh;
       width: auto;
+      display: block;
       li {
         display: inline;
         margin-left: 1rem;
@@ -48,14 +50,24 @@ header {
       font-weight: bold;
     }
   }
-
-  .collapse &__close {
-    display: block;
-  }
-  .collapse &__hamburger {
-    display: none;
-  }
+}
+.collapse.nav__hamburger {
+  display: none;
+}
+.collapse.nav__close {
+  display: block;
 }
 .collapse.nav__list {
   display: block;
+  margin-top: 6rem;
+  li {
+    padding-block: 0.7rem;
+  }
+  a {
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+}
+.collapse.header {
+  background: black;
 }

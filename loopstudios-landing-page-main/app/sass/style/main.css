@@ -114,7 +114,7 @@ header {
 
 @media (min-width: 40em) {
   header {
-    background: url(/loopstudios-landing-page-main/images/desktop/image-hero.jpg);
+    background: url(/loopstudios-landing-page-main/images/desktop/image-hero.jpg) no-repeat;
   }
 }
 
@@ -171,6 +171,7 @@ header {
     margin-top: 0.4rem;
     max-height: 100vh;
     width: auto;
+    display: block;
   }
   .nav__list li {
     display: inline;
@@ -183,16 +184,30 @@ header {
   font-weight: bold;
 }
 
-.collapse .nav__close {
-  display: block;
+.collapse.nav__hamburger {
+  display: none;
 }
 
-.collapse .nav__hamburger {
-  display: none;
+.collapse.nav__close {
+  display: block;
 }
 
 .collapse.nav__list {
   display: block;
+  margin-top: 6rem;
+}
+
+.collapse.nav__list li {
+  padding-block: 0.7rem;
+}
+
+.collapse.nav__list a {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.collapse.header {
+  background: black;
 }
 
 .interactive {
