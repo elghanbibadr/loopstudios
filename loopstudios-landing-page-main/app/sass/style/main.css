@@ -124,6 +124,26 @@ header {
   }
 }
 
+header h1 {
+  color: white;
+  margin-top: 12rem;
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  border: 2px solid white;
+}
+
+@media (min-width: 40em) {
+  header h1 {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 56em) {
+  header h1 {
+    width: 40vw;
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,6 +228,10 @@ header {
 
 .collapse.header {
   background: black;
+}
+
+.collapse.nav__heading {
+  display: none;
 }
 
 .interactive {

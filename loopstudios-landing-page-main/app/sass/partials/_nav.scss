@@ -1,5 +1,6 @@
 header {
   height: 100vh;
+
   padding: 2.7rem 2rem;
   background: url(/loopstudios-landing-page-main/images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
@@ -9,6 +10,19 @@ header {
   }
   @include largeDesktop {
     padding: 4rem 5rem;
+  }
+  h1 {
+    color: white;
+    margin-top: 12rem;
+    font-size: 3rem;
+    padding: 1rem 3rem;
+    border: 2px solid white;
+    @include tablette {
+      width: 60vw;
+    }
+    @include desktop {
+      width: 40vw;
+    }
   }
 }
 .nav {
@@ -30,6 +44,7 @@ header {
       display: none;
     }
   }
+
   &__list {
     width: 100%;
     display: none;
@@ -70,4 +85,7 @@ header {
 }
 .collapse.header {
   background: black;
+}
+.collapse.nav__heading {
+  display: none;
 }
