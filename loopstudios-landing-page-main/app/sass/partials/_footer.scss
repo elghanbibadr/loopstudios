@@ -1,0 +1,43 @@
+.footer {
+  margin-top: 4rem;
+  background-color: black;
+  padding: 2rem 1rem;
+  @include centerText;
+  @include tablette {
+    padding: 1rem;
+    text-align: left;
+  }
+  @include desktop {
+    padding: 1rem 5rem;
+  }
+  &__logo {
+    margin-top: 1rem;
+  }
+  &__list {
+    margin-block: 2rem;
+    li {
+      margin-block: 1rem;
+    }
+    @include tablette {
+      margin-block: 1rem;
+      li {
+        display: inline;
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+  a {
+    color: white;
+
+    // font-size: 1.5rem;
+    font-weight: bold;
+  }
+  &__media {
+    svg {
+      margin: 1rem 5px;
+    }
+    @include tablette {
+      text-align: right;
+    }
+  }
+}

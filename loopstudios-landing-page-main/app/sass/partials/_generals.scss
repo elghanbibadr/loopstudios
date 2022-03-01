@@ -16,3 +16,8 @@ a {
 ul {
   list-style: none;
 }
+a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+  transition: 0.2s;
+}

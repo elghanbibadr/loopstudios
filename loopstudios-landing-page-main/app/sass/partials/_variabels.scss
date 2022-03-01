@@ -25,3 +25,6 @@ $desktop: 56em;
 @mixin centerText {
   text-align: center;
 }
+p {
+  color: hsl(0, 0%, 55%);
+}

@@ -1,3 +1,7 @@
+p {
+  color: #8c8c8c;
+}
+
 html {
   font-size: 100%;
 }
@@ -61,6 +65,13 @@ a {
 
 ul {
   list-style: none;
+}
+
+a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 @media (min-width: 40em) {
@@ -422,6 +433,63 @@ header {
     margin-inline: 1rem;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+  }
+}
+
+.footer {
+  margin-top: 4rem;
+  background-color: black;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .footer {
+    padding: 1rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 56em) {
+  .footer {
+    padding: 1rem 5rem;
+  }
+}
+
+.footer__logo {
+  margin-top: 1rem;
+}
+
+.footer__list {
+  margin-block: 2rem;
+}
+
+.footer__list li {
+  margin-block: 1rem;
+}
+
+@media (min-width: 40em) {
+  .footer__list {
+    margin-block: 1rem;
+  }
+  .footer__list li {
+    display: inline;
+    margin: 0 1rem 0 0;
+  }
+}
+
+.footer a {
+  color: white;
+  font-weight: bold;
+}
+
+.footer__media svg {
+  margin: 1rem 5px;
+}
+
+@media (min-width: 40em) {
+  .footer__media {
+    text-align: right;
   }
 }
 /*# sourceMappingURL=main.css.map */
