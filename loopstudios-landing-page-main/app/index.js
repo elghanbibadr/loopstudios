@@ -21,3 +21,4 @@ const head=document.querySelector('.header');
 
 
  })
+// rememebrer to minim
